@@ -97,7 +97,6 @@ class PatientController {
    * @param {object} req
    * @param {object} res
    */
-
   async show(req, res) {
     const { id } = req.params;
     const patient = await Patient.find(id);
